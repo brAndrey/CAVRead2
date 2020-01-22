@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cavread2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WorkDateActivity"
+            android:label="@string/workDareTransition"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".OneWordActivity"
+            android:label="@string/title_activity_one_word"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".studyActivity"
+            android:label="@string/studyActivityName"/>
+        <activity android:name=".checkActivity"
+            android:label="@string/checkActivityNAme"/>
+
+        <activity android:name=".MainActivity">
+        </activity>
+
+        <activity android:name=".BattonSQLActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ListWordsActivity" />
+
+
+
+        <activity android:name=".ListLessonActivity" />
+        <activity android:name=".ListCSVActivity" />
+        <activity android:name=".OneLessonActivity" />
+        <activity android:name=".SettingActivity"
+            android:label="@string/settingAll" />
+        <activity android:name=".ListChoice.ListChoiceActivity" />
+        <activity android:name=".File.FilePickerActivity" />
+        <activity android:name=".File.WordsFromCSV" />
+        <activity android:name=".activity_words_from_CSV" />
+    </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".OneWordActivity"
+    tools:showIn="@layout/activity_one_word">
+
+    <EditText
+        android:id="@+id/editTextWord"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/newWord"
+        app:layout_constraintBottom_toTopOf="@id/editTextTranscription"
+        app:layout_constraintEnd_toEndOf="@id/wordBarrier1"
+        app:layout_constraintStart_toStartOf="@id/guidelineV"
+        app:layout_constraintTop_toTopOf="@id/guidelineHS"         />
+
+    <EditText
+        android:id="@+id/editTextTranscription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="textViewTranscription"
+
+        app:layout_constraintBottom_toTopOf="@id/editTextRus"
+        app:layout_constraintEnd_toEndOf="@id/wordBarrier1"
+        app:layout_constraintStart_toStartOf="@id/guidelineV"
+        app:layout_constraintTop_toBottomOf="@id/editTextWord" />
+
+
+    <EditText
+        android:id="@+id/editTextRus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint=" rus "
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineH"
+        app:layout_constraintEnd_toEndOf="@id/wordBarrier1"
+        app:layout_constraintStart_toStartOf="@id/guidelineV"
+        app:layout_constraintTop_toBottomOf="@id/editTextTranscription" />
+
+
+
+    <Button
+        android:id="@+id/buttonChooseWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newWord"
+        android:onClick="chooseWord"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineH"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/wordBarrier1"
+        app:layout_constraintTop_toTopOf="@id/guidelineHS" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/textViewLesson"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/threePoints"
+
+        app:layout_constraintBaseline_toBaselineOf="@id/buttonChooseLesson"
+        app:layout_constraintBottom_toTopOf="@id/buttonSave"
+        app:layout_constraintEnd_toEndOf="@id/wordBarrier1"
+        app:layout_constraintStart_toStartOf="@id/guidelineV"
+        app:layout_constraintTop_toTopOf="@id/guidelineH"
+        />
+
+    <Button
+        android:id="@+id/buttonChooseLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/battonChoiceLesson"
+        android:onClick="chooseLesson"
+
+        app:layout_constraintTop_toTopOf="@id/guidelineH"
+        app:layout_constraintStart_toStartOf="@id/wordBarrier1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonSave"
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveBatton"
+        android:onClick="saveWord"
+
+        app:layout_constraintTop_toTopOf="@id/guidelineH1"
+        app:layout_constraintStart_toStartOf="@id/guidelineV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonDelete"
+        />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonDelete"
+        android:onClick="removeWord"
+
+        app:layout_constraintTop_toBottomOf="@id/buttonSave"
+        app:layout_constraintStart_toStartOf="@id/guidelineV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonReturn"
+
+        />
+
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/battonReturn"
+        android:onClick="ReturnActivity"
+
+        app:layout_constraintTop_toBottomOf="@id/buttonDelete"
+        app:layout_constraintStart_toStartOf="@id/guidelineV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHF"
+        />
+
+
+    <!-- ************************************************************* -->
+    <android.support.constraint.Barrier
+        android:id="@+id/wordBarrier1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="editTextWord,editTextRus,editTextTranscription"
+        />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_horizontal|fill_vertical"
+    android:columnCount="1"
+    android:orientation="horizontal">
+
+    <Button android:text="Печать базы в Log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="fillSQL"/>
+
+    <Button android:text="@string/workDareTransition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:onClick="WorkDateTransition"/>
+
+    <include layout="@layout/content_main"/>
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:onClick="SettingBase"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Список"
+        android:onClick="ListSQL"/>
+
+    <Button android:text="Изучение"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="studyWorlds"/>
+
+
+    <Button android:text="Само проверка"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkWorlds"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Список уроков"
+        android:onClick="ListLessonSQL"/>
+
+
+
+</GridLayout>

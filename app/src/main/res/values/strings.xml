@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Зубрим слова</string>
+    <string name="about_text">About_text</string>
+    <string name="battonNext">Следующей</string>
+    <string name="battonPrew">Предыдущий</string>
+    <string name="battonReturn">Вернуться</string>
+    <string name="newWords">Добавить одно слово</string>
+    <string name="newLesson">Добавить новый урок</string>
+    <string name="newLessonSmol">Новый</string>
+    <string name="downloadCSV">Загрузить слова из файла CSV</string>
+    <string name="clearBase">Очистить базу</string>
+    <string name="newWord">Новое слово</string>
+    <string name="lessonText">Урок по которому работаем</string>
+    <string name="sortText">Метод сортировки слов в списке</string>
+    <string name="bottonText">В ы б и р а е м</string>
+    <string name="settingAll">Настройки</string>
+    <string name="lessonWrite">   </string>
+    <string name="ButtonClearLesson">Все</string>
+    <string name="downloadBase">Загрузить базовые слова</string>
+    <string name="title_activity_words_from__csv">activity_words_from_CSV</string>
+    <string name="buttonReadCSV">Читаем CSV</string>
+    <string name="battonChoiceLesson">Выбираем урок</string>
+    <string name="ButtonDownloadCSV">Загружаем слова</string>
+    <string name="title_activity_one_word">Одно слово</string>
+    <string name="threePoints">...</string>
+    <string name="saveBatton">Сохранить</string>
+    <string name="word">Слово</string>
+    <string name="lesson">Урок</string>
+    <string name="enterWord">вводите слово</string>
+    <string name="stringTipeSurvey">Выбираем тип опроса</string>
+    <string name="title_activity_work_date">Работа с данными приложения </string>
+    <string name="workDareTransition">Работы с базой слов</string>
+    <string name="buttonDelete"> удалить </string>
+    <string name="englishWord">английское слово</string>
+    <string name="transcription">транскрипция</string>
+    <string name="russianWord">русское слово</string>
+    <string name="studyActivityName">учим слова</string>
+    <string name="checkActivityNAme">проверка знаний</string>
+    <string-array name="sortWorc">
+        <item>Lesson</item>
+        <item>A B C D</item>
+        <item>А Б С Д</item>
+    </string-array>
+    <string-array name="tipeSurvey">
+        <item>вводить английские слова</item>
+        <item>enter russian word</item>
+    </string-array>
+    <string-array name="settingsType">
+        <item>LessonClass</item>
+        <item>SortClass</item>
+        <item>SurveyClass</item>
+    </string-array>
+
+</resources>

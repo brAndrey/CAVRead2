@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settingAll"
+        android:orderInCategory="100"
+        android:title="@string/settingAll"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/newWord"
+        android:orderInCategory="100"
+        android:title="@string/newWords"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/downloadCSV"
+        android:orderInCategory="100"
+        android:title="@string/downloadCSV"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/downloadBase"
+        android:orderInCategory="100"
+        android:title="@string/downloadBase"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/clearBase"
+        android:orderInCategory="100"
+        android:title="@string/clearBase"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/previousLayout"
+        android:orderInCategory="100"
+        android:title="@string/battonReturn"
+        app:showAsAction="never"/>
+</menu>

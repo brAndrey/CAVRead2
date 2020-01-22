@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SettingActivity"
+    tools:showIn="@layout/activity_setting"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSizeSetting"
+        android:textColor="@color/colorGrey"
+        android:text="@string/lessonText"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/LessonWrite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:hint=" В с е"
+                android:layout_weight="15"
+                android:text="@string/lessonWrite" />
+
+            <Button
+                android:id="@+id/clearLesson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="@string/ButtonClearLesson" />
+        </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/bottonText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSizeSetting"
+        android:textColor="@color/colorGrey"
+        android:text="@string/sortText"
+        />
+
+    <TextView
+        android:id="@+id/sortWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="@color/colorBlack"
+        android:hint="Sort Write" />
+
+
+        <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bottonText" />
+
+        <TextView
+            android:id="@+id/textTipeSurvey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSizeSetting"
+            android:textColor="@color/colorGrey"
+            android:text="@string/stringTipeSurvey"
+            />
+
+        <TextView
+            android:id="@+id/textViewTipeSurvey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/colorBlack"
+            android:hint="Tipe Survey" />
+
+        <Button
+            android:id="@+id/buttonTipeSurvey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bottonText" />
+
+        <Button
+            android:id="@+id/battonReturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/battonReturn"
+
+            />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

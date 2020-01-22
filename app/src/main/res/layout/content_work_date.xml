@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".WorkDateActivity"
+    tools:showIn="@layout/activity_work_date">
+
+    <Button
+        android:id="@+id/CWD_settingALL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settingAll"
+        android:onClick="SettingALL"
+        app:layout_constraintBottom_toTopOf="@id/CWD_newWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!--android:layout_marginTop="28dp"-->
+    />
+
+
+    <Button
+        android:id="@+id/CWD_newWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/contewt_work_date_element_vertical"
+        android:text="@string/newWords"
+        android:onClick="NewWord"
+
+        app:layout_constraintBottom_toTopOf="@id/CWD_downloadCSV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CWD_settingALL" />
+
+    <Button
+        android:id="@+id/CWD_downloadCSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/downloadCSV"
+        android:layout_marginTop="@dimen/contewt_work_date_element_vertical"
+        android:onClick="DownloadCSV"
+
+        app:layout_constraintBottom_toTopOf="@id/CWD_downloadBase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CWD_newWord" />
+
+    <Button
+        android:id="@+id/CWD_downloadBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/downloadBase"
+        android:layout_marginTop="@dimen/contewt_work_date_element_vertical"
+        android:onClick="DownloadBase"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CWD_downloadCSV"
+        app:layout_constraintBottom_toTopOf="@id/CWD_clearBase"
+
+        />
+
+    <Button
+        android:id="@+id/CWD_clearBase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clearBase"
+        android:layout_marginTop="@dimen/contewt_work_date_element_vertical"
+        android:onClick="ClearBase"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CWD_downloadBase"
+        app:layout_constraintBottom_toTopOf="@id/CWD_battonReturn"
+        />
+
+    <Button
+        android:id="@+id/CWD_battonReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/battonReturn"
+        android:layout_marginTop="@dimen/contewt_work_date_element_vertical"
+        android:onClick="BattonReturn"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CWD_clearBase"
+
+
+        />
+</android.support.constraint.ConstraintLayout>
